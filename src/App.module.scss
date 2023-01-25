@@ -1,0 +1,8 @@
+@use './styles/colors' as color;
+
+.hello {
+	color: color.$blue;
+	.name {
+		color: color.$red;
+	}
+}
