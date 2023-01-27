@@ -1,0 +1,36 @@
+@use '../../styles/_colors.scss' as color;
+
+.user-field {
+	margin-top: 30px;
+}
+.container {
+	display: flex;
+	align-items: center;
+	background-color: color.$brown;
+	padding: 10px;
+	border-radius: 30px;
+	-webkit-box-shadow: -3px 9px 0px -5px rgba(176, 186, 188, 1);
+	-moz-box-shadow: -3px 9px 0px -5px rgba(176, 186, 188, 1);
+	box-shadow: -3px 9px 0px -5px rgba(176, 186, 188, 1);
+
+	.user-message {
+		max-width: 300px;
+	}
+}
+.user {
+	display: flex;
+	justify-content: flex-end;
+
+	.image {
+		margin-left: 5px;
+		border-radius: 50%;
+	}
+}
+.friend {
+	display: flex;
+	.image {
+		padding-right: 5px;
+		margin-left: 5px;
+		border-radius: 50%;
+	}
+}

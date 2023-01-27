@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { webpack } = require('webpack');
+const autoprefixer = require('autoprefixer');
 const isProduction = process.env.NODE_ENV == 'production';
 
 const stylesHandler = 'style-loader';
@@ -21,7 +23,7 @@ const config = {
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, './src/index.html')
 		}),
-		new MiniCssExtractPlugin()
+		new MiniCssExtractPlugin({})
 	],
 	module: {
 		rules: [
@@ -35,12 +37,13 @@ const config = {
 				]
 			},
 			{
-				test: /\.css$/i,
-				use: [stylesHandler, 'css-loader']
-			},
-			{
-				test: /\.s[ac]ss$/i,
-				use: [stylesHandler, 'css-loader', 'sass-loader']
+				test: /\.((c|sa|sc)ss)$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					'css-loader',
+					'postcss-loader',
+					'sass-loader'
+				]
 			},
 			{
 				test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,

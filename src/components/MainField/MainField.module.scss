@@ -1,0 +1,33 @@
+@use '../../styles/_colors.scss' as color;
+.container {
+	padding: 30px 0px 0px 30px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+}
+.left-field {
+	display: grid;
+}
+
+.title-name-friend {
+	padding-top: 30px;
+	font-size: 40px;
+	color: color.$black;
+}
+.block-messages {
+	overflow-y: auto;
+	min-height: 18cm;
+	max-height: 18cm;
+	padding: 30px 5px;
+}
+
+.input-field {
+	padding-top: 20px;
+	display: grid;
+}
+
+.right-field {
+	padding: 10px;
+	min-width: 80px;
+	display: grid;
+	align-items: flex-end;
+}

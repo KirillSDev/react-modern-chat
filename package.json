@@ -14,6 +14,8 @@
   "author": "KirillS",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.3.2",
+    "framer-motion": "^8.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -27,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "@webpack-cli/generators": "^3.0.1",
+    "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "eslint": "^8.32.0",
@@ -36,6 +39,7 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "mini-css-extract-plugin": "^2.7.2",
+    "postcss-loader": "^7.0.2",
     "prettier": "^2.8.3",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
@@ -55,6 +59,9 @@
       "prettier --write"
     ]
   },
+  "browserslist": [
+    "defaults"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
