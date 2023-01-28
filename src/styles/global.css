@@ -5,5 +5,24 @@
 }
 
 body {
-  font-family: "Lekton", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #313031 #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  scroll-behavior: smooth;
+  background-color: rgba(15, 15, 15, 0.1215686275);
+  border-radius: 10px;
 }

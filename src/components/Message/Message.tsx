@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import img from '../../assets/UI/button/button-avatar.png';
+import img from '../../assets/user.png';
 import styles from './Message.module.scss';
 import cn from 'classnames';
 
@@ -19,11 +19,29 @@ export const Message: FC<TypeMessage> = ({ user, text }) => {
 				{user === 'user' ? (
 					<>
 						<p className={styles['user-message']}>{text}</p>
-						<img src={img} height={50} alt='img' className={styles.image}></img>
+						<div className={styles['image-container']}>
+							<div className={styles['image-circle-container']}>
+								<img
+									src={img}
+									height={50}
+									alt='img'
+									className={styles.image}
+								></img>
+							</div>
+						</div>
 					</>
 				) : (
 					<>
-						<img src={img} height={50} alt='img' className={styles.image}></img>
+						<div className={styles['image-container']}>
+							<div className={styles['image-circle-container']}>
+								<img
+									src={img}
+									height={50}
+									alt='img'
+									className={styles.image}
+								></img>
+							</div>
+						</div>
 						<p className={styles['user-message']}>{text}</p>
 					</>
 				)}

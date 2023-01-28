@@ -4,6 +4,7 @@ import styles from './MainField.module.scss';
 import img from '../../assets/UI/button/button-avatar-blue2.png';
 import { Message } from '../Message/Message';
 import { Input } from '../Input/Input';
+import { DynamicButton } from '../DynamicButton/DynamicButton';
 const MainField: FC<IMainField> = ({ ...props }) => {
 	const [message, setMessage] = useState<string>('');
 
@@ -19,15 +20,20 @@ const MainField: FC<IMainField> = ({ ...props }) => {
 					<h5 className={styles['title-name-friend']}>Elvira Stray</h5>
 					<div className={styles['block-messages']}>
 						{message && <Message user={'user'} text={message} />}
+						<Message user={'user'} text={message} />
+						<Message user={'user'} text={message} />
+						<Message user={'user'} text={message} />
+
+						<Message user={'user'} text={message} />
+						<Message user={'user'} text={message} />
+						<Message user={'user'} text={message} />
 					</div>
 					<div className={styles['input-field']}>
 						<Input change={getMessage}></Input>
 					</div>
 				</div>
 				<div className={styles['right-field']}>
-					<div>
-						<button>Give podarok</button>
-					</div>
+					<DynamicButton />
 				</div>
 			</div>
 		</div>

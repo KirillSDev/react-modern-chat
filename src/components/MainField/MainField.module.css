@@ -10,19 +10,32 @@
 }
 
 .title-message {
+  background-color: #202a30;
+  border-radius: 40px 20px;
+  z-index: 2;
+  cursor: default;
+  color: #f7fafb;
   font-size: 0.7em;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .title-name-friend {
+  text-shadow: -1px 2px 1px rgba(221, 199, 184, 0.26), -2px 4px 1px rgba(0, 0, 0, 0.205);
+  cursor: default;
   padding-top: 30px;
-  font-size: 2.6em;
+  font-size: 3.6em;
   color: #202a30;
 }
 
 .block-messages {
   overflow-y: auto;
-  min-height: 18cm;
-  max-height: 18cm;
+  max-height: calc(100vh - 380px);
   padding: 30px 5px;
 }
 
@@ -33,7 +46,6 @@
 
 .right-field {
   padding: 10px;
-  min-width: 80px;
   display: grid;
   align-items: flex-end;
 }

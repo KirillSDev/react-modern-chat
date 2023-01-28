@@ -16,6 +16,7 @@
 }
 
 .input {
+  cursor: default;
   height: 80%;
   background-color: #f7fafb;
   font-size: 1.1em;

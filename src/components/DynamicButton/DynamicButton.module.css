@@ -1,0 +1,11 @@
+.gift {
+  transition: transform 0.2s;
+  position: relative;
+}
+.gift input[type=file] {
+  display: none;
+}
+
+.gift:hover {
+  transform: rotate(20deg) scale(1.1);
+}

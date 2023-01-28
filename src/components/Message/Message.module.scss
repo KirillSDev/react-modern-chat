@@ -4,6 +4,7 @@
 	margin-top: 30px;
 }
 .container {
+	font-size: 1em;
 	display: flex;
 	align-items: center;
 	background-color: color.$brown;
@@ -17,21 +18,37 @@
 		max-width: 300px;
 		word-break: break-all;
 	}
+	.image-container {
+		margin-left: 5px;
+		height: 50px;
+		width: 50px;
+		background-color: color.$primary;
+		border-radius: 50px 20px 50px 20px;
+
+		position: relative;
+	}
+	.image-circle-container {
+		position: absolute;
+		left: -50%;
+		transform: translate(48%);
+
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		overflow: hidden;
+	}
+	.image-circle-container > img {
+		width: 100%;
+		height: auto;
+	}
 }
 .user {
 	display: flex;
 	justify-content: flex-end;
-
-	.image {
-		margin-left: 5px;
-		border-radius: 50%;
-	}
 }
 .friend {
 	display: flex;
-	.image {
-		padding-right: 5px;
-		margin-left: 5px;
-		border-radius: 50%;
+	.image-container {
+		margin-right: 5px;
 	}
 }

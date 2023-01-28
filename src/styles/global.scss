@@ -4,5 +4,23 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Lekton', sans-serif;
+	font-family: 'Space Grotesk', sans-serif;
+}
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #313031 #ffffff;
+}
+
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff00;
+}
+
+*::-webkit-scrollbar-thumb {
+	scroll-behavior: smooth;
+	background-color: #0f0f0f1f;
+	border-radius: 10px;
 }

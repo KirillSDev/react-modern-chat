@@ -15,6 +15,7 @@
 	background-color: color.$black;
 }
 .input {
+	cursor: default;
 	height: 80%;
 	background-color: color.$white;
 	font-size: 1.1em;
@@ -26,7 +27,6 @@
 	z-index: 1;
 	resize: none;
 	outline: none;
-
 	overflow: auto;
 }
 
