@@ -2,11 +2,13 @@
   padding: 30px 0px 0px 30px;
   display: grid;
   grid-template-columns: 1fr auto;
-  font-size: 1em;
 }
 
 .left-field {
   display: grid;
+  height: calc(100vh - 100px);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 3fr auto;
 }
 
 .title-message {
@@ -29,18 +31,18 @@
   text-shadow: -1px 2px 1px rgba(221, 199, 184, 0.26), -2px 4px 1px rgba(0, 0, 0, 0.205);
   cursor: default;
   padding-top: 30px;
-  font-size: 3.6em;
+  font-size: 3.6vw;
   color: #202a30;
 }
 
 .block-messages {
   overflow-y: auto;
-  max-height: calc(100vh - 380px);
   padding: 30px 5px;
 }
 
 .input-field {
   padding-top: 20px;
+  height: 80px;
   display: grid;
 }
 

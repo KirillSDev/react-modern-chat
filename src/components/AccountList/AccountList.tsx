@@ -26,14 +26,7 @@ export const AccountList: FC<IAccountList> = ({ ...props }): JSX.Element => {
 				</div>
 				<div className={styles.list}>
 					{listFriends.map((el: IFriends) => {
-						return (
-							<AccountItem
-								key={el.name}
-								name={el.name}
-								message={el.message}
-								image={el.image[0]}
-							/>
-						);
+						return <AccountItem key={el.id} info={el} />;
 					})}
 				</div>
 			</div>
