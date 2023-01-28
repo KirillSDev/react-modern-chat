@@ -1,6 +1,7 @@
 .container {
   padding: 10px;
   margin-top: 20px;
+  font-size: 1em;
   overflow: auto;
 }
 
@@ -9,14 +10,14 @@
   margin-bottom: 40px;
 }
 .header .header-title {
-  font-size: 30px;
+  font-size: 0.5em;
   text-align: center;
   color: #d8784f;
 }
 
 .accounts-title > h3 {
   text-align: center;
-  font-size: 15px;
+  font-size: 0.3em;
   color: #d8784f;
 }
 

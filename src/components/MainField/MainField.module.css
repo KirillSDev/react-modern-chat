@@ -2,15 +2,20 @@
   padding: 30px 0px 0px 30px;
   display: grid;
   grid-template-columns: 1fr auto;
+  font-size: 1em;
 }
 
 .left-field {
   display: grid;
 }
 
+.title-message {
+  font-size: 0.7em;
+}
+
 .title-name-friend {
   padding-top: 30px;
-  font-size: 40px;
+  font-size: 2.6em;
   color: #202a30;
 }
 
