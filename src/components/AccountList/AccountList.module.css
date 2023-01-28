@@ -14,6 +14,20 @@
   text-align: center;
   color: #d8784f;
 }
+.header .header-img-container {
+  margin-left: 40px;
+  margin-top: 20px;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.header .header-img-container .header-img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 
 .accounts-title > h3 {
   text-align: center;
@@ -29,12 +43,4 @@
   gap: 20px;
   grid-template-rows: auto;
   padding-bottom: 40px;
-}
-.list .list-item {
-  font-size: 12px;
-  display: flex;
-}
-.list .list-item > p {
-  display: flex;
-  align-items: center;
 }

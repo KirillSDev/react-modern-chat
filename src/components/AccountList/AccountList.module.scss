@@ -11,8 +11,21 @@
 	.header-title {
 		font-size: 0.5em;
 		text-align: center;
-
 		color: color.$orange;
+	}
+	.header-img-container {
+		margin-left: 40px;
+		margin-top: 20px;
+		height: 180px;
+		width: 180px;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		.header-img {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
 	}
 }
 .accounts-title {
@@ -30,13 +43,4 @@
 	gap: 20px;
 	grid-template-rows: auto;
 	padding-bottom: 40px;
-
-	.list-item {
-		font-size: 12px;
-		display: flex;
-		> p {
-			display: flex;
-			align-items: center;
-		}
-	}
 }
