@@ -3,8 +3,8 @@ import styles from './AccountList.module.scss';
 import img from '../../assets/user.png';
 import { IAccountList } from './AccountList.props';
 import { AccountItem } from './AccountItem/AccountItem';
-
-export const AccountList: FC<IAccountList> = ({ ...props }) => {
+import { IFriends, listFriends } from '../../fakedata/listFriends';
+export const AccountList: FC<IAccountList> = ({ ...props }): JSX.Element => {
 	return (
 		<div {...props}>
 			<div className={styles.container}>
@@ -25,13 +25,16 @@ export const AccountList: FC<IAccountList> = ({ ...props }) => {
 					<h3>List Accounts</h3>
 				</div>
 				<div className={styles.list}>
-					<AccountItem name={'Elvira Stray'} message={'Hello'} />
-					<AccountItem name={'Elvira Stray'} message={'Male'} />
-					<AccountItem name={'Elvira Stray'} message={'Hey'} />
-					<AccountItem name={'Elvira Stray'} message={'Hoa are you'} />
-					<AccountItem name={'Elvira Stray'} message={'Hello'} />
-					<AccountItem name={'Elvira Stray'} message={'Hello'} />
-					<AccountItem name={'Elvira Stray'} message={'Hello'} />
+					{listFriends.map((el: IFriends) => {
+						return (
+							<AccountItem
+								key={el.name}
+								name={el.name}
+								message={el.message}
+								image={el.image[0]}
+							/>
+						);
+					})}
 				</div>
 			</div>
 		</div>
