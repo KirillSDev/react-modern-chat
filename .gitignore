@@ -1,3 +1,5 @@
 build
 node_modules
+backend/node_modules
 checkthis.md
+.env
