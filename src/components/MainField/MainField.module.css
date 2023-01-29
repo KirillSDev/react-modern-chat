@@ -1,0 +1,53 @@
+.container {
+  padding: 30px 0px 0px 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.left-field {
+  display: grid;
+  height: calc(100vh - 100px);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 3fr auto;
+}
+
+.title-message {
+  background-color: #202a30;
+  border-radius: 40px 20px;
+  z-index: 2;
+  cursor: default;
+  color: #f7fafb;
+  font-size: 0.7em;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.title-name-friend {
+  text-shadow: -1px 2px 1px rgba(221, 199, 184, 0.26), -2px 4px 1px rgba(0, 0, 0, 0.205);
+  cursor: default;
+  padding-top: 30px;
+  font-size: 3.6vw;
+  color: #202a30;
+}
+
+.block-messages {
+  overflow-y: auto;
+  padding: 30px 5px;
+}
+
+.input-field {
+  padding-top: 20px;
+  height: 80px;
+  display: grid;
+}
+
+.right-field {
+  padding: 10px;
+  display: grid;
+  align-items: flex-end;
+}

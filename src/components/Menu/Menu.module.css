@@ -1,0 +1,35 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr 2fr 2fr);
+  justify-items: center;
+}
+
+.exit-button {
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #ece1c7;
+  transition: all 0.2s;
+}
+
+.exit-button:hover {
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 220px;
+  left: 0;
+  margin-left: 10px;
+  width: 6%;
+  border-bottom: 1px solid #ece1c7;
+}
+
+.interface {
+  display: grid;
+  gap: 10px;
+}

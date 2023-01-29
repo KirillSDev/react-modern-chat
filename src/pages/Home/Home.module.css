@@ -1,0 +1,35 @@
+.container {
+  background-color: #202a30;
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 3fr 4fr;
+  grid-template-areas: "header header header" "menu list-chat main-field";
+}
+
+.header {
+  grid-area: header;
+  background-color: #202a30;
+  height: 20px;
+}
+
+.menu {
+  grid-area: menu;
+  padding: 10px;
+  background-color: #202a30;
+}
+
+.account-list {
+  border-top-left-radius: 20px;
+  box-shadow: -6px -1px 17px 2px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: -6px -1px 17px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -6px -1px 17px 2px rgba(0, 0, 0, 0.8);
+  font-size: 50px;
+  grid-area: list-chat;
+  background-color: #dce3e2;
+}
+
+.main-field {
+  grid-area: main-field;
+  background-color: #e8eded;
+}

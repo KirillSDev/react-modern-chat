@@ -16,5 +16,6 @@
       "incremental": true,
       "noImplicitThis": true
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*", "src/declaration.d.ts"],
+    
   }

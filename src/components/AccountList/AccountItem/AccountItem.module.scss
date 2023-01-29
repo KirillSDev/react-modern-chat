@@ -1,0 +1,52 @@
+@use '../../../styles/_colors.scss' as color;
+
+.list-item {
+	cursor: pointer;
+	font-size: 12px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+
+	> p {
+		display: flex;
+		align-items: center;
+	}
+	.info-user {
+		overflow: hidden;
+		font-size: 1.2em;
+		width: calc(80% - 100px);
+		h5 {
+			margin-bottom: 2px;
+		}
+		p {
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+	.image-container {
+		height: 50px;
+		width: 50px;
+		background-color: color.$primary;
+		border-radius: 50px 20px 50px 20px;
+		position: relative;
+	}
+	.image-circle-container {
+		position: absolute;
+		left: -50%;
+		transform: translate(48%);
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		overflow: hidden;
+	}
+	.image-circle-container > img {
+		width: 100%;
+		height: auto;
+	}
+	transition: background-color 0.2s;
+}
+.list-item:hover {
+	background-color: color.$brown;
+	border-radius: 20px;
+}

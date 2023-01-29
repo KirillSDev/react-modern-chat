@@ -1,0 +1,46 @@
+.container {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1em;
+  overflow: auto;
+}
+
+.header {
+  display: grid;
+  margin-bottom: 40px;
+}
+.header .header-title {
+  font-size: 0.5em;
+  text-align: center;
+  color: #d8784f;
+}
+.header .header-img-container {
+  margin-left: 40px;
+  margin-top: 20px;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.header .header-img-container .header-img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.accounts-title > h3 {
+  text-align: center;
+  font-size: 0.3em;
+  color: #d8784f;
+}
+
+.list {
+  max-height: 600px;
+  overflow-y: scroll;
+  padding-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: auto;
+  padding-bottom: 40px;
+}

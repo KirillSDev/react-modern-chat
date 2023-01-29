@@ -1,0 +1,51 @@
+.user-field {
+  margin-top: 30px;
+}
+
+.container {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  background-color: #ece1c7;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: -3px 9px 0px -5px rgb(176, 186, 188);
+}
+.container .user-message {
+  font-size: 1vw;
+  max-width: 300px;
+  word-break: break-all;
+}
+.container .image-container {
+  margin-left: 5px;
+  height: 50px;
+  width: 50px;
+  background-color: #e8eded;
+  border-radius: 50px 20px 50px 20px;
+  position: relative;
+}
+.container .image-circle-container {
+  position: absolute;
+  left: -50%;
+  transform: translate(48%);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+}
+.container .image-circle-container > img {
+  width: 100%;
+  height: auto;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.friend {
+  display: flex;
+}
+.friend .image-container {
+  margin-right: 5px;
+}

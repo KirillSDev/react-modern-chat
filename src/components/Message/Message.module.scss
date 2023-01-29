@@ -1,0 +1,55 @@
+@use '../../styles/_colors.scss' as color;
+
+.user-field {
+	margin-top: 30px;
+}
+.container {
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+	background-color: color.$brown;
+	padding: 10px;
+	border-radius: 30px;
+	-webkit-box-shadow: -3px 9px 0px -5px rgba(176, 186, 188, 1);
+	-moz-box-shadow: -3px 9px 0px -5px rgba(176, 186, 188, 1);
+	box-shadow: -3px 9px 0px -5px rgba(176, 186, 188, 1);
+
+	.user-message {
+		font-size: 1vw;
+		max-width: 300px;
+		word-break: break-all;
+	}
+	.image-container {
+		margin-left: 5px;
+		height: 50px;
+		width: 50px;
+		background-color: color.$primary;
+		border-radius: 50px 20px 50px 20px;
+
+		position: relative;
+	}
+	.image-circle-container {
+		position: absolute;
+		left: -50%;
+		transform: translate(48%);
+
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		overflow: hidden;
+	}
+	.image-circle-container > img {
+		width: 100%;
+		height: auto;
+	}
+}
+.user {
+	display: flex;
+	justify-content: flex-end;
+}
+.friend {
+	display: flex;
+	.image-container {
+		margin-right: 5px;
+	}
+}
